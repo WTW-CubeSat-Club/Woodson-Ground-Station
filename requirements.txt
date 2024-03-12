@@ -1,0 +1,7 @@
+#Required:
+#adafruit_motorkit
+#digitalio
+#board
+#pyproj
+#pandas
+#rtlsdr
