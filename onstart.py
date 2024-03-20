@@ -51,8 +51,8 @@ while True:
     if (mode):
         print("Run with connection ")
     else:
-        if ((os.path.isfile('/Documents/Targets.csv'))):
-            targList = pd.read_csv('/Documents/Targets.csv')
+        if ((os.path.isfile('/Targets.csv'))):
+            targList = pd.read_csv('Targets.csv')
             df = pd.DataFrame(targList)
             timeNow = time.time()
             row = df.loc[df['trackStart']>(timeNow+5)].iloc[0] ##Find first available target (time start is more than 5 seconds from now)
